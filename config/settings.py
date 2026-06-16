@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 
 from pathlib import Path
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -23,9 +24,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-+i09t7y4*nqrs0+q1p0txlnqav#sm2%5k1o6#q$p=23xy%cxmt'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    ".onrender.com",
+    "127.0.0.1",
+    "localhost",
+]
 
 
 # Application definition
@@ -119,3 +124,6 @@ STATIC_URL = 'static/'
 
 LOGIN_URL = "/accounts/login/"
 LOGOUT_REDIRECT_URL = "/accounts/login/"
+
+STATIC_ROOT = BASE_DIR / "staticfiles"
+
