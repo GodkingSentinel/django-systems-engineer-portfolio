@@ -1,43 +1,307 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BAE Systems Engineer</title>
+    <title>Richard Viens | Systems Engineer</title>
+    <link rel="stylesheet" href="{% static 'profilepage/style.css' %}">
 </head>
 <body>
 
-<h1>Richard Viens</h1>
-<h2>BAE Systems Engineer</h2>
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+    <a href="/staff/">Recruiter Login</a>
+</nav>
 
-<hr>
+<section id="about" class="hero">
+    <img src="{% static 'profilepage/images/profile.jpg' %}" alt="Richard Viens" class="profile-pic">
 
-<h2>About Me</h2>
-<p>
-    Technology leader, software engineer, cybersecurity professional,
-    and systems architect focused on mission critical systems.
-</p>
+    <h1>Richard Viens</h1>
 
-<h2>Technical Skills</h2>
-<ul>
-    <li>C++</li>
-    <li>Java</li>
-    <li>Python</li>
-    <li>Linux</li>
-    <li>GitLab</li>
-    <li>DevSecOps</li>
-    <li>Embedded Systems</li>
-</ul>
+    <h2>Systems Engineer | Software Engineer | Linux Professional</h2>
 
-<h2>Education</h2>
-<p>Master of Science in MIS</p>
+    <p class="tagline">
+        Mission-focused technical professional supporting secure,
+        reliable, and high-availability defense systems.
+    </p>
+</section>
 
-<h2>Projects</h2>
-<ul>
-    <li>Secure software development</li>
-    <li>Medical compliance automation</li>
-    <li>Defense systems engineering</li>
-</ul>
+<div class="card">
+    <p>
+        Systems Engineer supporting U.S. Space Force mission systems with experience in
+        Linux administration, cybersecurity compliance, automation, and software
+        development. Currently pursuing a Master of Science in Computer Science while
+        expanding expertise in C++, embedded systems, and systems engineering.
+    </p>
+</div>
+
+<div class="mission-banner">
+    <h3>Defense Systems & Space Force Operations</h3>
+
+    <p>
+        Active Top Secret Clearance • Space Force Mission Support •
+        Linux Infrastructure • Cybersecurity Compliance • GBOSS • GEODSS
+    </p>
+</div>
+
+<h2 id="skills">Core Strengths</h2>
+
+<div class="card">
+    <ul>
+        <li>Red Hat Enterprise Linux 7/8/9</li>
+        <li>Windows Server Administration</li>
+        <li>Cybersecurity Compliance, STIGs, Nessus, Splunk, and Trellix ePO</li>
+        <li>GitLab, version control, and software project workflow</li>
+        <li>Python, Java, C++, Bash, and PowerShell</li>
+        <li>Mission-critical Space Force system support</li>
+        <li>Automation, troubleshooting, and root-cause analysis</li>
+    </ul>
+</div>
+
+<h2 id="experience">Professional Experience</h2>
+
+<div class="card">
+    <h3>BAE Systems – System Administrator II</h3>
+
+    <ul>
+        <li>Administered Windows and Red Hat Enterprise Linux systems supporting defense operations.</li>
+        <li>Maintained cybersecurity compliance through STIG implementation and vulnerability remediation.</li>
+        <li>Worked with Splunk, Trellix ePO, Nessus, and enterprise monitoring tools.</li>
+        <li>Developed automation scripts using PowerShell, Bash, and Python.</li>
+        <li>Supported GBOSS and mission-critical system operations.</li>
+        <li>Reduced emergency support calls through proactive troubleshooting and process improvements.</li>
+        <li>Trained new personnel and supported technical interviews.</li>
+    </ul>
+</div>
+
+<h2>Target Role Alignment</h2>
+
+<div class="card">
+    <p>
+        This portfolio is focused on Systems Engineering and Software Engineering
+        roles requiring Linux, C++, object-oriented programming, Git, embedded
+        systems knowledge, and secure mission-focused development.
+    </p>
+</div>
+
+<h2>Professional Experience Highlights</h2>
+
+<div class="card">
+    <ul>
+        <li>Supported mission-critical telescope and sensor operations for U.S. Space Force missions.</li>
+        <li>Supported GBOSS installation, sustainment, and mission system operations.</li>
+        <li>Worked with ISSO, CISO, and cybersecurity teams to maintain compliance and audit readiness.</li>
+        <li>Used Splunk, Trellix ePO, Nessus, and STIG tools to support secure enterprise systems.</li>
+        <li>Created automation and procedures to improve reliability and reduce manual workload.</li>
+        <li>Trained new personnel and supported technical candidate interviews.</li>
+    </ul>
+</div>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+        <h3>Fortran to Java Weather System Translation</h3>
+
+        <p>
+            Converted a procedural Fortran weather application into an
+            object-oriented Java solution. Utilized GitLab for source control,
+            branch management, commit history tracking, and CI/CD pipeline
+            automation. Demonstrated software development lifecycle practices
+            including testing, debugging, version control, and automated
+            build validation.
+        </p>
+
+        <p>
+            Skills: Java, Object-Oriented Programming, Git, GitLab CI/CD,
+            Software Testing, Debugging, Version Control
+        </p>
+
+        <a href="https://github.com/GodkingSentinel/java-weather-translation"
+           target="_blank"
+           class="contact-button">
+            View Project
+        </a>
+    </div>
+
+    <div class="card">
+        <h3>Django Systems Engineer Portfolio</h3>
+
+        <p>
+            Built a full Django web application featuring authentication,
+            protected resources, resume downloads, static content management,
+            and recruiter-focused portfolio presentation.
+        </p>
+
+        <p>
+            Skills: Python, Django, HTML, CSS, Authentication
+        </p>
+
+        <p>
+            This website was developed using Django, Python, HTML, CSS,
+            and Git version control to showcase technical experience,
+            projects, education, and certifications.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Linux Automation and Ansible Administration</h3>
+
+        <p>
+            Developed automation scripts and Ansible playbooks to streamline
+            system administration tasks, reduce manual effort, and improve
+            consistency across Linux environments.
+        </p>
+
+        <p>
+            <strong>Skills:</strong> Linux, Ansible, Bash, Automation
+        </p>
+
+        <a href="https://github.com/GodkingSentinel/linux-baseline-automation"
+           target="_blank"
+           class="contact-button">
+            View Project
+        </a>
+
+    </div>
+    <div class="project-card">
+        <h3>C++ Ambulance Dispatch Simulator</h3>
+
+        <p>
+            Developed a C++ ambulance dispatch simulation system that prioritizes
+            emergency calls, selects the fastest available ambulance based on route
+            travel times, generates dispatch records, and measures algorithm
+            execution performance.
+        </p>
+
+        <p>
+            <strong>Skills:</strong>
+            C++, Algorithms, Data Structures, Route Optimization,
+            Performance Analysis, STL, Software Development
+        </p>
+
+        <a href="https://github.com/GodkingSentinel/cpp-ambulance-dispatch-simulator"
+           target="_blank"
+           class="contact-button">
+            View Project
+        </a>
+    </div>
+</section>
+
+<h2>Software Development Focus</h2>
+
+<div class="card">
+    <ul>
+        <li>C++ object-oriented programming</li>
+        <li>Java software development</li>
+        <li>Python automation and scripting</li>
+        <li>GitLab and GitHub repositories</li>
+        <li>Django web development</li>
+        <li>Algorithms and software design fundamentals</li>
+    </ul>
+</div>
+
+<h2>Current Learning</h2>
+
+<div class="card">
+    <ul>
+        <li>Advanced C++ development</li>
+        <li>Embedded systems concepts</li>
+        <li>Agile software development</li>
+        <li>Software testing and debugging</li>
+        <li>GitLab CI/CD pipelines</li>
+    </ul>
+</div>
+
+<h2 id="education">Education</h2>
+
+<div class="card">
+    <h3>Master of Science in Computer Science</h3>
+
+    <p>
+        Western Governors University (WGU)<br>
+        Computing Systems - In Progress
+    </p>
+
+    <h3>Bachelor of Science in Information Security</h3>
+
+    <p>
+        Information Technology and Security-related coursework including
+        Networking, Linux Administration, Programming, Cryptography,
+        Database Systems, and Cybersecurity.
+    </p>
+
+    <h3>Current Areas of Study</h3>
+
+    <ul>
+        <li>C++ Programming</li>
+        <li>Data Structures and Algorithms</li>
+        <li>Embedded Systems</li>
+        <li>Object-Oriented Design</li>
+        <li>System Engineering Principles</li>
+    </ul>
+</div>
+
+<h2>Certifications</h2>
+
+<div class="card">
+    <ul>
+        <li>CompTIA Security+</li>
+        <li>Splunk Core Certified User</li>
+        <li>Enterprise Linux 7 System Administrator</li>
+        <li>Windows Server 2019 Administrator</li>
+        <li>Python Foundations</li>
+        <li>Automation with Ansible</li>
+    </ul>
+</div>
+
+<h2 id="contact">Contact</h2>
+
+<div class="card">
+    <p><strong>Name:</strong> Richard Viens</p>
+
+    <p>
+        <strong>LinkedIn:</strong>
+        <a href="https://www.linkedin.com/in/richard-viens-62b150215/"
+           target="_blank">
+            LinkedIn Profile
+        </a>
+    </p>
+
+    <p>
+        <strong>GitHub:</strong>
+        <a href="https://github.com/GodkingSentinel" target="_blank">
+            GitHub Portfolio
+        </a>
+    </p>
+
+    <a href="{% static 'profilepage/documents/Richard_Viens_BAE_Systems_Engineer_Resume.pdf' %}"
+       target="_blank"
+       class="contact-button">
+        Download Resume
+    </a>
+    </p>
+
+    <p>
+        <strong>Email:</strong>
+        <a href="mailto:Richard.Viens444@outlook.com">
+            Richard.Viens444@outlook.com
+        </a>
+    </p>
+</div>
+
+<footer>
+    <p>
+        © 2026 Richard Viens | Systems Engineer Portfolio |
+        Built with Python, Django, HTML, CSS, and Git
+    </p>
+</footer>
 
 </body>
 </html>
