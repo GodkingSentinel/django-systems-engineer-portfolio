@@ -4,7 +4,6 @@ from profilepage import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", views.home, name="home"),
-    path("staff/", views.staff_dashboard, name="staff_dashboard"),
     path("accounts/", include("django.contrib.auth.urls")),
+    path("", views.home, name="home"),
 ]
