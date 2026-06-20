@@ -1,6 +1,7 @@
 {% load static %}
 
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,25 +12,26 @@
 
 <nav>
     <a href="/">Portfolio</a>
+
+    ```
     <form method="post" action="/accounts/logout/" style="display:inline;">
         {% csrf_token %}
         <button type="submit" class="logout-button">Logout</button>
     </form>
+    ```
+
 </nav>
 
 <div class="card">
     <h1>Recruiter Dashboard</h1>
 
+    ```
     <p>Welcome, {{ user.username }}</p>
 
     <h2>Private Resources</h2>
     <h2>Downloads</h2>
 
-    <a href="{% static 'profilepage/documents/Richard_Viens_BAE_Systems_Engineer_Resume.pdf' %}"
-       target="_blank"
-       class="contact-button">
-        Download Resume
-    </a>
+    <p><strong>Resume available upon request.</strong></p>
 
     <ul>
         <li>Resume PDF</li>
@@ -38,6 +40,8 @@
         <li>Architecture Diagrams</li>
         <li>System Engineering Notes</li>
     </ul>
+    ```
+
 </div>
 
 </body>
