@@ -1,44 +1,35 @@
-{% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Recruiter Dashboard</title>
-    <link rel="stylesheet" href="{% static 'profilepage/style.css' %}">
 </head>
 <body>
 
 <nav>
     <a href="/">Portfolio</a>
+
     <form method="post" action="/accounts/logout/" style="display:inline;">
         {% csrf_token %}
-        <button type="submit" class="logout-button">Logout</button>
+        <button type="submit">Logout</button>
     </form>
 </nav>
 
-<div class="card">
-    <h1>Recruiter Dashboard</h1>
+<h1>Recruiter Dashboard</h1>
 
-    <p>Welcome, {{ user.username }}</p>
+<p>Welcome, {{ user.username }}</p>
 
-    <h2>Private Resources</h2>
-    <h2>Downloads</h2>
+<h2>Private Resources</h2>
 
-    <a href="{% static 'profilepage/documents/Richard_Viens_BAE_Systems_Engineer_Resume.pdf' %}"
-       target="_blank"
-       class="contact-button">
-        Download Resume
-    </a>
+<ul>
+    <li>Resume PDF</li>
+    <li>Cover Letters</li>
+    <li>Project Documentation</li>
+    <li>Architecture Diagrams</li>
+    <li>System Engineering Notes</li>
+</ul>
 
-    <ul>
-        <li>Resume PDF</li>
-        <li>Cover Letters</li>
-        <li>Project Documentation</li>
-        <li>Architecture Diagrams</li>
-        <li>System Engineering Notes</li>
-    </ul>
-</div>
+<p>Dashboard test page loaded successfully.</p>
 
 </body>
 </html>
