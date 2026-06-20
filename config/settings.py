@@ -124,7 +124,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 LOGIN_URL = "/accounts/login/"
-LOGIN_REDIRECT_URL = "/"
+LOGIN_REDIRECT_URL = "/#projects"
 LOGOUT_REDIRECT_URL = "/accounts/login/"
 
 STATIC_ROOT = BASE_DIR / "staticfiles"
