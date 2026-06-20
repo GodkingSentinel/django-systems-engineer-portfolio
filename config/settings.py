@@ -124,7 +124,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 LOGIN_URL = "/accounts/login/"
-LOGIN_REDIRECT_URL = "/staff-dashboard.html/"
+LOGIN_REDIRECT_URL = "/staff-dashboard/"
 LOGOUT_REDIRECT_URL = "/accounts/login/"
 
 STATIC_ROOT = BASE_DIR / "staticfiles"
