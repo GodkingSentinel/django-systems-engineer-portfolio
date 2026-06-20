@@ -6,4 +6,5 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("accounts/", include("django.contrib.auth.urls")),
     path("", views.home, name="home"),
+    path("staff-dashboard/", views.staff_dashboard, name="staff_dashboard"),
 ]
