@@ -1,8 +1,10 @@
-from django.shortcuts import render
+```python
 from pathlib import Path
+
 from django.conf import settings
 from django.contrib.auth.decorators import login_required
 from django.http import FileResponse, Http404
+from django.shortcuts import render
 
 
 def home(request):
@@ -14,12 +16,15 @@ def staff_dashboard(request):
     return render(request, "profilepage/staff_dashboard.html")
 
 
-file_path = (
-    Path(settings.BASE_DIR)
-    / "profilepage"
-    / "private_documents"
-    / "Recommendation for Systems Engineer Consideration.pdf"
-)
+@login_required
+def download_recommendation_letter(request):
+    file_path = (
+        Path(settings.BASE_DIR)
+        / "profilepage"
+        / "profilepage"
+        / "private_documents"
+        / "Recommendation for Systems Engineer Consideration.pdf"
+    )
 
     if not file_path.exists():
         raise Http404("Recommendation letter not found.")
@@ -29,3 +34,4 @@ file_path = (
         as_attachment=True,
         filename="Recommendation for Systems Engineer Consideration.pdf",
     )
+```
