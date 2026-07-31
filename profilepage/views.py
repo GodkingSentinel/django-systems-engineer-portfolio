@@ -20,7 +20,7 @@ def download_recommendation_letter(request):
         Path(settings.BASE_DIR)
         / "profilepage"
         / "private_documents"
-        / "Richard_Viens_Recommendation_Letter.pdf"
+        / "Recommendation for Systems Engineer Consideration.pdf"
     )
 
     if not file_path.exists():
@@ -29,5 +29,5 @@ def download_recommendation_letter(request):
     return FileResponse(
         open(file_path, "rb"),
         as_attachment=True,
-        filename="Richard_Viens_Recommendation_Letter.pdf",
+        filename="Recommendation for Systems Engineer Consideration.pdf",
     )
