@@ -14,14 +14,12 @@ def staff_dashboard(request):
     return render(request, "profilepage/staff_dashboard.html")
 
 
-@login_required
-def download_recommendation_letter(request):
-    file_path = (
-        Path(settings.BASE_DIR)
-        / "profilepage"
-        / "private_documents"
-        / "Recommendation for Systems Engineer Consideration.pdf"
-    )
+file_path = (
+    Path(settings.BASE_DIR)
+    / "profilepage"
+    / "private_documents"
+    / "Recommendation for Systems Engineer Consideration.pdf"
+)
 
     if not file_path.exists():
         raise Http404("Recommendation letter not found.")
