@@ -1,4 +1,3 @@
-```python
 from pathlib import Path
 
 from django.conf import settings
@@ -34,4 +33,4 @@ def download_recommendation_letter(request):
         as_attachment=True,
         filename="Recommendation for Systems Engineer Consideration.pdf",
     )
-```
+    
