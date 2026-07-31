@@ -1,46 +1,61 @@
 {% load static %}
 
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Recruiter Dashboard</title>
-    <link rel="stylesheet" href="{% static 'profilepage/style.css' %}">
+
+    <link rel="stylesheet"
+          href="{% static 'profilepage/style.css' %}">
 </head>
+
 <body>
 
 <nav>
     <a href="/">Portfolio</a>
 
-    ```
-    <form method="post" action="/accounts/logout/" style="display:inline;">
+    <form method="post"
+          action="/accounts/logout/"
+          style="display: inline;">
         {% csrf_token %}
-        <button type="submit" class="logout-button">Logout</button>
-    </form>
-    ```
 
+        <button type="submit"
+                class="logout-button">
+            Logout
+        </button>
+    </form>
 </nav>
 
 <div class="card">
+
     <h1>Recruiter Dashboard</h1>
 
-    ```
-    <p>Welcome, {{ user.username }}</p>
+    <p>
+        Welcome, {{ user.username }}
+    </p>
 
     <h2>Private Resources</h2>
+
+    <p>
+        Additional professional documents are available below.
+    </p>
+
     <h2>Downloads</h2>
 
-    <p><strong>Resume available upon request.</strong></p>
+    <a href="{% url 'download_recommendation_letter' %}"
+       class="contact-button">
+        Download Recommendation Letter
+    </a>
 
     <ul>
-        <li>Resume PDF</li>
-        <li>Cover Letters</li>
+        <li>Recommendation Letter</li>
         <li>Project Documentation</li>
         <li>Architecture Diagrams</li>
         <li>System Engineering Notes</li>
     </ul>
-    ```
 
 </div>
 
